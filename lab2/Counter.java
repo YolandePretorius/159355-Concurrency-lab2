@@ -13,6 +13,13 @@ public class Counter {
   	  value = temp + 1;       //write[v+1]
   	  System.out.println("TOTAL: " + value);
 	}
+	
+	void decrement() {
+	  	  int temp = value;   //read[v]
+	  	  Simulate.HWinterrupt();
+	  	  value = temp - 1;       //write[v+1]
+	  	  System.out.println("TOTAL: " + value);
+		}
 }
 
 class Simulate {
